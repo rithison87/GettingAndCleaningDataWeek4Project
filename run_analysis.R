@@ -10,12 +10,12 @@ setwd("C:/Users/rithison/Documents/getdata-projectfiles-UCI HAR Dataset/UCI HAR 
 # Section 2: store the various text files into variables (activity labels, features, test and train datasets)
 activity_labels <- read.delim("activity_labels.txt", header=FALSE)
 features <- read.delim("features.txt", header=FALSE)
-subject_test <- read.delim("C:/Users/rithison/Documents/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt", header=FALSE)
-x_test <- readLines("C:/Users/rithison/Documents/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt")
-y_test <- read.delim("C:/Users/rithison/Documents/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt", header=FALSE)
-subject_train <- read.delim("C:/Users/rithison/Documents/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt", header=FALSE)
-x_train <- readLines("C:/Users/rithison/Documents/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt")
-y_train <- read.delim("C:/Users/rithison/Documents/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt", header=FALSE)
+subject_test <- read.delim("./test/subject_test.txt", header=FALSE)
+x_test <- readLines("./test/X_test.txt")
+y_test <- read.delim("./test/y_test.txt", header=FALSE)
+subject_train <- read.delim("./train/subject_train.txt", header=FALSE)
+x_train <- readLines("./train/X_train.txt")
+y_train <- read.delim("./train/y_train.txt", header=FALSE)
 
 #  Section 3: replace 2 spaces with 1 "s", then split columns by "s", delete first column
 x_test <- gsub("\\s\\s?", "\\s", x_test)

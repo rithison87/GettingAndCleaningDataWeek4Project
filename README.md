@@ -1,7 +1,9 @@
 # GettingAndCleaningDataWeek4Project
 
 Rithi Son
+
 Getting and Cleaning Data
+
 Week 4 Project
 
 ==================================================

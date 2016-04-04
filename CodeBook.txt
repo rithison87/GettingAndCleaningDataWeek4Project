@@ -1,0 +1,47 @@
+Rithi Son
+Getting and Cleaning Data
+Week 4 Project
+
+==================================================
+
+This R script uses data from Human Activity Recognition Using Smartphones Dataset.
+
+==================================================
+
+Variables used and reasoning:
+
+Section 2:
+Each variable is the same name as the text file the data is from.
+activity_labels contains "activity_labels.txt".
+features contains "features.txt".
+subject_test contains "subject_test.txt".
+ETC.
+
+Section 3:
+Updating the x_test and x_train variables by removing the spaces and replacing with "s". 
+tc1 and tc2 use the textConnection function to read and update the text in x_test and x_train.
+
+Section 4:
+features_unlist is an unlisted version of the original features variable. This will be used as the column names in the x_test and x_train datasets.
+names is used to update column names for y_test, y_train, subject_test, and subject_train.
+
+Section 5: 
+x_test_y_test_subject_test contains the cbind data from subject_test, y_test, and x_test.
+
+Section 6: 
+x_train_y_train_subject_train contains the cbind data from subject_train, y_train, and x_train.
+
+Section 7: 
+combined_test_train is the combined dataset of all the test and train data.
+
+Section 8:
+activity_labels gets two additional columns for descriptive purposes.
+
+Section 9:
+combined_mean_std contains only columns that contain "mean()" and "std()".
+
+Section 10:
+combined_activity joins combined_test_train and activity_labels to include the descriptive names of activities.
+
+Section 11:
+combined_all_variables_mean groups by subject and activity to calculate the means of every single column name.
